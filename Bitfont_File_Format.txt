@@ -1,0 +1,26 @@
+Bitfont file format:
+
+Header: Bfnt = 4bytes. //Check if valid .bitfont
+nameLength: = 4 byte interger.
+name = (nameLength)byte(s).
+tracking = 1byte //max 255
+spaceValue = 1byte //max 255
+glyphcount = 1byte; //Max 255
+glyphChunkTotalLength = 4 byte interger.
+glyphChunks.
+
+glyph chunks:
+noOfChars - 4 byte interger
+associatedChars = noOfChars bytes.
+(read chars)
+width - 4 byte integer.
+height - 4 byte interger.
+noOfBools - 4 byte interger.
+bools = width*height bytes;
+(read bools)
+
+
+
+
+
+
